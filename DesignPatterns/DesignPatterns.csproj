@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40304A1F-787E-4EA0-9ED9-6C37E8939F55}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DesignPatterns</RootNamespace>
+    <AssemblyName>DesignPatterns</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdapterPattern\EmployeeAdapter.cs" />
+    <Compile Include="AdapterPattern\HRSystem.cs" />
+    <Compile Include="AdapterPattern\ITarget.cs" />
+    <Compile Include="AdapterPattern\ThirdPartyBillingSystem.cs" />
+    <Compile Include="Chain of Responsibility Pattern\Employee.cs" />
+    <Compile Include="Chain of Responsibility Pattern\HR.cs" />
+    <Compile Include="Chain of Responsibility Pattern\Leave.cs" />
+    <Compile Include="Chain of Responsibility Pattern\ProjectLeader.cs" />
+    <Compile Include="Chain of Responsibility Pattern\TeamLeader.cs" />
+    <Compile Include="CommandPattern\FlipDownCommand.cs" />
+    <Compile Include="CommandPattern\FlipUpCommand.cs" />
+    <Compile Include="CommandPattern\ICommand.cs" />
+    <Compile Include="CommandPattern\Light.cs" />
+    <Compile Include="CommandPattern\Switch.cs" />
+    <Compile Include="CompositePattern\Contractor.cs" />
+    <Compile Include="CompositePattern\Employee.cs" />
+    <Compile Include="CompositePattern\IEmployed.cs" />
+    <Compile Include="Decoratory Pattern\HondaCity.cs" />
+    <Compile Include="Decoratory Pattern\IVehicle.cs" />
+    <Compile Include="Decoratory Pattern\SpecialOffer.cs" />
+    <Compile Include="Decoratory Pattern\VehicleDecorator.cs" />
+    <Compile Include="FacadePattern\CostManager.cs" />
+    <Compile Include="FacadePattern\ICosting.cs" />
+    <Compile Include="FacadePattern\IInventory.cs" />
+    <Compile Include="FacadePattern\ILogistics.cs" />
+    <Compile Include="FacadePattern\InventoryManager.cs" />
+    <Compile Include="FacadePattern\IOrderVerify.cs" />
+    <Compile Include="FacadePattern\IPaymentGateway.cs" />
+    <Compile Include="FacadePattern\LogisticsManager.cs" />
+    <Compile Include="FacadePattern\OnlineShoppingFacade.cs" />
+    <Compile Include="FacadePattern\OrderDetails.cs" />
+    <Compile Include="FacadePattern\OrderVerificationManager.cs" />
+    <Compile Include="FacadePattern\PaymentGatewayManager.cs" />
+    <Compile Include="FactoryPattern\CardFactory.cs" />
+    <Compile Include="FactoryPattern\MoneyBackCreditCard.cs" />
+    <Compile Include="FactoryPattern\MoneyBackFactory.cs" />
+    <Compile Include="FactoryPattern\PlatinumCreditCard.cs" />
+    <Compile Include="FactoryPattern\CreditCard.cs" />
+    <Compile Include="FactoryPattern\PlatinumFactory.cs" />
+    <Compile Include="FactoryPattern\TitaniumCreditCard.cs" />
+    <Compile Include="FactoryPattern\TitaniumFactory.cs" />
+    <Compile Include="MediatorPattern\AbstractChatroom.cs" />
+    <Compile Include="MediatorPattern\Beatle.cs" />
+    <Compile Include="MediatorPattern\Chatroom.cs" />
+    <Compile Include="MediatorPattern\NonBeatle.cs" />
+    <Compile Include="MediatorPattern\Participant.cs" />
+    <Compile Include="ObserverPattern\ASubject.cs" />
+    <Compile Include="ObserverPattern\DummyProduct.cs" />
+    <Compile Include="ObserverPattern\IObserver.cs" />
+    <Compile Include="ObserverPattern\Shop.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxy Pattern\FinalImage.cs" />
+    <Compile Include="Proxy Pattern\Image.cs" />
+    <Compile Include="Proxy Pattern\ImageProxy.cs" />
+    <Compile Include="Proxy Pattern\Imager.cs" />
+    <Compile Include="Proxy Pattern\QuickImage.cs" />
+    <Compile Include="Singleton\SingletonExample.cs" />
+    <Compile Include="StatePattern\ATM.cs" />
+    <Compile Include="StatePattern\ATMState.cs" />
+    <Compile Include="StatePattern\CardValidatedState.cs" />
+    <Compile Include="StatePattern\CashWithdrawnState.cs" />
+    <Compile Include="StatePattern\MACHINE_STATE.cs" />
+    <Compile Include="StatePattern\NoCardState.cs" />
+    <Compile Include="StatePattern\NoCashState.cs" />
+    <Compile Include="StatePattern\NoStateATM_spagetti.cs" />
+    <Compile Include="Template Pattern\IAlgorithm.cs" />
+    <Compile Include="Template Pattern\ICommand.cs" />
+    <Compile Include="Template Pattern\SwitchOnWaschmachine.cs" />
+    <Compile Include="Template Pattern\Washmachine.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

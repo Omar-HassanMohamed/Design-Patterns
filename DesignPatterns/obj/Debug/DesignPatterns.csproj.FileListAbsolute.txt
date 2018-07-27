@@ -1,0 +1,7 @@
+D:\Desing Patterns Coursera\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.exe.config
+D:\Desing Patterns Coursera\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.exe
+D:\Desing Patterns Coursera\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.pdb
+D:\Desing Patterns Coursera\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.csprojResolveAssemblyReference.cache
+D:\Desing Patterns Coursera\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.csproj.CoreCompileInputs.cache
+D:\Desing Patterns Coursera\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.exe
+D:\Desing Patterns Coursera\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.pdb
